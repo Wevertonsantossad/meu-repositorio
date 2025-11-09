@@ -1,0 +1,234 @@
+/* Reset e fundo preto */
+* {
+  box-sizing: border-box; /* Inclui padding e border dentro da largura/altura dos elementos */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* Fonte principal do site */
+  margin: 0;
+  /* Remove margem padrão do navegador */
+  padding: 0;
+  /* Remove padding padrão */
+  background-color: #f4f4f4;
+  /* Cor de fundo padrão do site */
+  color: #1a1919;
+  /* Cor padrão do texto */
+}
+
+header {
+  /* Para posicionar elementos absolutos dentro do header */
+  display: flex;
+  /* Usado para centralizar conteúdo vertical e horizontalmente */
+  align-items: center;
+  /* Centraliza horizontalmente */
+  justify-content: space-between;
+  /* Centraliza verticalmente */
+  background-color: #000000;
+  /* Espaçamento interno do header */
+  text-align: center;
+  /* Centraliza textos */
+  overflow: hidden;
+  /* Esconde excesso de elementos */
+  color: #7300f7d5;
+  /* Cor padrão do texto dentro do header */
+  position: relative;
+  /* Para posicionar elementos absolutos dentro do header */
+  padding: 0px 200px 0px 0px;
+}
+
+.logo {
+  width: 50px; /* Define largura da logo */
+  opacity: 0.9;  /* Define transparência */
+  transition: transform 0.3s ease; /* Anima transformações suavemente */
+  margin-left: 40px; /* Espaçamento à esquerda */
+  flex: 0 1 auto; /* Flex-grow 0, flex-shrink 1, flex-basis auto */ 
+}
+
+.logo-link:hover .logo {
+  transform: scale(1.05); /* Aumenta levemente a logo ao passar o mouse */
+  cursor: pointer; /* Muda cursor para mãozinha */
+  transition: transform 0.3s ease; /* Garante animação suave */
+}
+
+header a img.logo {
+  transition: transform 0.3s ease; /* Transição suave para hover */
+} 
+
+header a img.logo:hover {
+  transform: scale(1.05);/* Aumenta logo levemente ao passar mouse */ 
+  cursor: pointer; /* Cursor mãozinha */
+} 
+
+header .logo {
+  margin-bottom: 10px;  /* Espaçamento entre logo e título */
+  /* espaçamento entre logo e título */
+  opacity: 0.08;
+  /* Logo bem transparente */
+  width: 140px;
+  /* Largura da logo */
+  z-index: 0;
+  /* Fica atrás do título e nav */
+}
+
+.header-center {
+  text-align: center; /* Centraliza texto */
+  flex: 1;
+  /* Ocupa o espaço disponível entre logo e nav */
+}
+
+.header-center h1 {
+  margin: 0px;
+  /* Remove margem padrão */
+  font-size: 48px;
+  /* Tamanho do título */
+  color: #ff0000;
+  /* Cor do título */
+
+}
+
+header nav {
+  display: flex;
+  /* Usado para alinhar links horizontalmente */
+  gap: 15px;
+  /* Espaçamento entre os links */
+  flex-wrap: wrap;
+  /* Permite quebra de linha se necessário */
+  justify-content: center;
+  /* Centraliza os links horizontalmente */
+  margin-top: 15px;
+  /* Espaçamento acima do nav */
+
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  /* Remove sublinhado dos links */
+  font-size: 20px;
+  /* Deixa os links em negrito */
+  margin: 0 20px;
+  /* Espaçamento lateral dos links */
+}
+
+header nav a:hover {
+  color: #ff0000; /* Cor do título */
+}
+.article-conteudo {
+  display: flex; /* Alinha links horizontalmente */
+  flex-direction: column; /* Espaçamento entre links */
+  align-items: center;
+  gap: 20px; /* Espaçamento entre os textos */
+  padding: 20px;
+  background-color: #000;
+}
+
+.article-conteudo h5 {
+  max-width: 800px;
+  line-height: 1.6;
+  color: #34006e;
+  margin: 0 auto;
+  font-size: 28px;
+}
+.article-conteudo h6 {
+  max-width: 800px;
+  line-height: 1.6;
+  color: #34006e;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.article-conteudo p {
+  max-width: 800px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+/* Imagem cobrindo tela toda abaixo do texto */
+.imagemsobre {
+  width: 100%;
+  height: 100vh; /* altura total da tela */
+  overflow: hidden;
+  position: relative;
+}
+
+.imagemsobre img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* garante que a imagem preencha sem distorcer */
+  display: block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background-color: #000;
+}
+@media (max-width: 799px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    /* abaixo do header/hambúrguer */
+    right: -250px;
+    /* escondido inicialmente */
+    width: 250px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding-top: 20px;
+    gap: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  /* Mostra menu quando checkbox estiver marcado */
+  #menu-toggle:checked~nav ul {
+    right: 0;
+  }
+
+  nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  nav ul a:hover {
+    color: #ff0000;
+  }
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.imagemsobre img {
+  max-width: 100%;
+  /* nunca ultrapassa a largura do container */
+  height: auto;
+  /* mantém proporção da imagem */
+  display: block;
+  /* remove pequenos gaps abaixo da imagem */
+  margin: 0 auto;
+  /* centraliza horizontalmente */
+}

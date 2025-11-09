@@ -1,0 +1,364 @@
+/* estilos gerais */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* Fonte principal do site */
+  margin: 0;
+  /* Remove margem padrão do navegador */
+  padding: 0;
+  /* Remove padding padrão */
+  background-color: #f4f4f4;
+  /* Cor de fundo padrão do site */
+  color: #1a1919;
+  /* Cor padrão do texto */
+}
+
+header {
+  /* Para posicionar elementos absolutos dentro do header */
+  display: flex;
+  /* Usado para centralizar conteúdo vertical e horizontalmente */
+  align-items: center;
+  /* Centraliza horizontalmente */
+  justify-content: space-between;
+  /* Centraliza verticalmente */
+  background-color: #000000;
+  /* Espaçamento interno do header */
+  text-align: center;
+  /* Centraliza textos */
+  overflow: hidden;
+  /* Esconde excesso de elementos */
+  color: #1b0535d5;
+  /* Cor padrão do texto dentro do header */
+  position: relative;
+  /* Para posicionar elementos absolutos dentro do header */
+  padding: 0px 200px 0px 0px;
+}
+
+.logo {
+  width: 50px;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+  margin-left: 40px;
+  flex: 0 1 auto;
+}
+
+.logo-link:hover .logo {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+header a img.logo {
+  transition: transform 0.3s ease;
+}
+
+header a img.logo:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+header .logo {
+  margin-bottom: 10px;
+  /* espaçamento entre logo e título */
+  opacity: 0.08;
+  /* Logo bem transparente */
+  width: 140px;
+  /* Largura da logo */
+  z-index: 0;
+  /* Fica atrás do título e nav */
+}
+
+.header-center {
+  text-align: center;
+  flex: 1;
+  /* Ocupa o espaço disponível entre logo e nav */
+}
+
+.header-center h1 {
+  margin: 0px;
+  /* Remove margem padrão */
+  font-size: 48px;
+  /* Tamanho do título */
+  color: #ff0000;
+  /* Cor do título */
+
+}
+
+header nav {
+  display: flex;
+  /* Usado para alinhar links horizontalmente */
+  gap: 15px;
+  /* Espaçamento entre os links */
+  flex-wrap: wrap;
+  /* Permite quebra de linha se necessário */
+  justify-content: center;
+  /* Centraliza os links horizontalmente */
+  margin-top: 15px;
+  /* Espaçamento acima do nav */
+
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  /* Remove sublinhado dos links */
+  font-size: 20px;
+  /* Deixa os links em negrito */
+  margin: 0 20px;
+  /* Espaçamento lateral dos links */
+}
+
+header nav a:hover {
+  color: #ff0000;
+}
+.discord-flutuante {
+    position: fixed;      /* Fica fixo na tela */
+    bottom: 20px;         /* Distância da parte de baixo */
+    right: 20px;          /* Distância da direita */
+    z-index: 1000;        /* Fica acima de outros elementos */
+}
+
+.discord-flutuante button {
+    background-color: #7289da;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.discord-flutuante button:hover {
+    background-color: #5b6eae;
+}
+
+
+#introducao {
+  background-image: url('./img/climaNevoado.png');
+  /* Imagem de fundo */
+  background-size: cover;
+  /* Cobre toda a área */
+  background-position: center;
+  /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  /* Não repete a imagem */
+  height: 100vh;
+  /* Altura total da tela */
+  color: #ffffff;
+  /* Cor do texto */
+  padding: 100px 20px;
+  /* Espaçamento interno */
+  opacity: 200;
+  text-shadow: 20px 20px 20px #e70000;
+}
+
+/* texto por cima do overlay */
+.introducao-texto {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  opacity: 0.9;
+  /* deixa o texto um pouco transparente */
+}
+
+.introducao-texto h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.introducao-texto h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.introducao-texto ul {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+main {
+  padding: 20px;
+  /* Espaçamento interno do main */
+  background-color: #000000;
+  /* Fundo do main cor*/
+  color: #fff;
+  /* Cor do texto no main */
+  min-height: 400px;
+  /* Altura mínima do main */
+}
+
+#historia {
+  background-color: #000000;
+  /* Fundo do main cor*/
+  color: #fff;
+  /* Cor do texto no main*/
+  min-height: 100vh;
+  /* Altura mínima do main */
+  padding: 40px;
+  /* Espaçamento interno do main */
+  display: flex;
+  /* Usado para alinhar itens */
+  flex-direction: column;
+  /* Alinha itens em coluna */
+  align-items: center;
+  /* Centraliza itens horizontalmente */
+  justify-content: center;
+  /* Centraliza itens verticalmente */
+  text-align: center;
+  /* Centraliza texto */
+  line-height: 1.8;
+  /* Espaçamento entre linhas */
+  font-size: 20px;
+  /* Tamanho da fonte */
+}
+
+#midia video {
+  background-color: #000000;
+  /* Fundo do main cor*/
+  padding: 20px 20px;
+  /* Espaçamento interno do main */
+}
+
+.video-container {
+  display: flex;
+  /* Usado para alinhar itens */
+  align-items: center;
+  /* Centraliza itens horizontalmente */
+  justify-content: center;
+  /* Centraliza itens verticalmente */
+  text-align: center;
+  /* Centraliza texto */
+  gap: 30px;
+  /* Espaçamento entre vídeos */
+  flex-wrap: wrap;
+}
+
+.video-container video {
+  width: 45%;
+  aspect-ratio: 16 / 9;
+  /* Mantém proporção 16:9 */
+  border: 2px solid #333;
+  /* Borda branca ao redor do vídeo */
+  border-radius: 8px;
+  /* Bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Sombra para dar profundidade */
+  transition: transform 0.3s, box-shadow 0.3s;
+  /* Transição suave para hover */
+  cursor: pointer;
+  /* Cursor de mãozinha ao passar o mouse */
+  object-fit: cover;
+  /* evita distorção */
+}
+
+.video-container video:hover {
+  transform: scale(1.05);
+  /* Aumenta o vídeo ao passar o mouse */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  /* Sombra mais intensa ao passar o mouse */
+}
+
+footer {
+  background-color: #000000;
+  /* Fundo do footer cor*/
+  color: #fff;
+  /* Cor do texto no footer */
+  text-align: center;
+  /* Centraliza o texto */
+  padding: 15px;
+  /* Espaçamento interno do footer */
+  position: relative;
+  /* Para posicionar elementos absolutos dentro do footer */
+  bottom: 0;
+  width: 100%;
+  /* 🔸 Somente no CELULAR (largura até 768px) */
+}
+
+#menu-toggle {
+  display: none;
+  /* Esconde o checkbox em todos os tamanhos de tela */
+}
+
+.menu-icon {
+  display: none;
+  /* <-- isso garante que o ícone não aparece no PC */
+}
+
+/* ==== MENU HAMBURGUER PARA CELULAR ==== */
+@media (max-width: 799px) {
+
+  /* Esconde o menu padrão */
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    /* começa fora da tela */
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding-top: 80px;
+    gap: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    font-size: 5px;
+  }
+
+  /* Mostra ícone do menu */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+  }
+
+  /* Quando o menu é ativado */
+.header-center #menu-toggle:checked ~ nav ul {
+  right: 0;
+}
+
+  /* Esconde checkbox */
+  #menu-toggle {
+    display: none;
+  }
+
+  /* Links dentro do menu */
+  nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  nav ul a:hover {
+    color: #ff0000;
+  }
+
+  .video-container {
+    flex-direction: column;
+  }
+
+  .video-container video {
+    width: 90%;
+  }
+
+  #introducao {
+    padding: 60px 15px;
+    text-align: center;
+  }
+
+  #historia {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
