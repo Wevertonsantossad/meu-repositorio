@@ -1,9 +1,10 @@
-# 🩸 Meu Projeto Estilo DayZ
+# 🩸 Meu Projeto Estilo DayZ — DEAD ZONE
 
 ![Banner animado](assets/banner.svg)
 
-## 📸 Screenshot do site
-> Coloque aqui a imagem do seu site (estilo DayZ)
+---
+
+## 📸 Screenshot do Site
 
 <p align="center">
   <img src="assets/deadzone-site.png" width="900" style="border-radius: 12px;"/>
@@ -11,31 +12,37 @@
 
 ---
 
-## 🧟 Sobre o projeto
+## 🧟 Sobre o Projeto
+
 Este é um projeto inspirado no universo **DayZ**, com foco em:
 
 - 🌑 Ambiente escuro e pós-apocalíptico  
 - 🔫 Sobrevivência hardcore  
 - 🧭 Interface minimalista porém imersiva  
-- 🎮 Visual sombrio para aumentar a tensão  
+- 🎮 Visual cinematográfico e sombrio  
 
 ---
 
-## 🚀 Tecnologias usadas
-- HTML / CSS / JS  
-- Assets sombrios e minimalistas  
-- Animações leves em SVG  
-- Otimização para telas desktop + mobile  
+## 🚀 Tecnologias Usadas
+
+- **HTML5**  
+- **CSS3**  
+- **JavaScript**  
+- SVG animado  
+- Estética pós-apocalíptica inspirada em DayZ  
+- Layout responsivo (desktop + mobile)
 
 ---
 
-## 🩹 Status
+## 🩸 Status do Projeto
+
 ![status](https://img.shields.io/badge/status-em%20desenvolvimento-red)
 ![survival](https://img.shields.io/badge/survival-100%25-darkred)
 
 ---
 
-## 🗺️ Como rodar o projeto
+## 🗺️ Como Rodar o Projeto
+
 ```bash
 git clone https://github.com/wevertonsantossad/meu-repositorio
 cd meu-repositorio
