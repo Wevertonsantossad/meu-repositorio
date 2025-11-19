@@ -6,7 +6,7 @@
 > Coloque aqui a imagem do seu site (estilo DayZ)
 
 <p align="center">
-  <img src="assets/seu-site.png" width="900" style="border-radius: 12px;"/>
+  <img src="assets/deadzone-site.png" width="900" style="border-radius: 12px;"/>
 </p>
 
 ---
@@ -37,6 +37,6 @@ Este é um projeto inspirado no universo **DayZ**, com foco em:
 
 ## 🗺️ Como rodar o projeto
 ```bash
-git clone https://github.com/SEU_USUARIO/SEU_REPO
-cd SEU_REPO
+git clone https://github.com/wevertonsantossad/meu-repositorio
+cd C:\Users\wever\Desktop\Devclub 1
 open index.html
