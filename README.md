@@ -38,5 +38,5 @@ Este é um projeto inspirado no universo **DayZ**, com foco em:
 ## 🗺️ Como rodar o projeto
 ```bash
 git clone https://github.com/wevertonsantossad/meu-repositorio
-cd C:\Users\wever\Desktop\Devclub 1
+cd meu-repositorio
 open index.html
