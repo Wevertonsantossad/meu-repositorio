@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240">
+  <rect width="100%" height="100%" fill="#0a0a0a"></rect>
+
+  <filter id="noise">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"></feTurbulence>
+    <feColorMatrix type="saturate" values="0"></feColorMatrix>
+    <feBlend in="SourceGraphic" in2="noise" mode="soft-light"></feBlend>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#noise)" opacity="0.15"></rect>
+
+  <text x="50%" y="50%" font-family="Impact, sans-serif" font-size="80" fill="#e63946" text-anchor="middle" dy="10">
+    DEAD ZONE
+    <animate attributeName="opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"></animate>
+  </text>
+
+  <text x="50%" y="70%" font-family="Arial" font-size="22" fill="#cccccc" text-anchor="middle" opacity="0.8">
+    Sobrevivência • Medo • Escuridão
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="4s" repeatCount="indefinite"></animate>
+  </text>
+
+  <circle cx="450" cy="10" r="6" fill="#8b0000">
+    <animate attributeName="cy" from="10" to="230" dur="1.8s" repeatCount="indefinite"></animate>
+    <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"></animate>
+  </circle>
+</svg>
