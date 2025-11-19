@@ -1,7 +1,6 @@
 # 🩸 Meu Projeto Estilo DayZ — DEAD ZONE
 
 ![Banner animado](assets/banner.svg)
-<img src="assets/banner.svg">
 
 ---
 
